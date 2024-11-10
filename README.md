@@ -117,3 +117,12 @@ Group by CustomerID
 ![SQL Top 3 Regions --- Customer data](https://github.com/user-attachments/assets/48e714e6-752e-4796-8a2c-94fc440ec167)
 
 
+The results of the analysis are summarized below:
+#### Subscription Overview;
+- The Basic subscription which is the most popular subscription type (16,921) also generated the highest revenue (33,776,735.00) of all the 3 subscription types, while the standard subscription had the lowest revenue of 16,864,376.00.  
+- The East region had the highest number of customers (8488), while the West region had the lowest value of 8420.      
+- No customers cancelled their subscriptions within 6 months.
+
+### Recommendations
+- The very high revenue generated from Basic Subscription type shows that most customers prefer it as it is also the most popular; hence, more resources should be invested into it so as to optimize profit. 
+- The reason for a low number of customers in the West region should be investigated, so as to identify and address the obstacles that may be present there. 
