@@ -100,6 +100,12 @@ where Canceled = 'False'
 Group by CustomerID
 ```
 
+### Results 
+
+[Adeniyi Olufunso Comprehensive Customer Data.xlsx](https://github.com/user-attachments/files/17690059/Adeniyi.Olufunso.Comprehensive.Customer.Data.xlsx)
+
+
+
 
 
 
