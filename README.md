@@ -33,6 +33,8 @@ Queries were also written and executed to extract key insights on the following:
 -	find the top 3 regions by subscription cancellations. 
 -	find the total number of active and canceled subscriptions.
 
+### Data Analysis
+
 
 
 
