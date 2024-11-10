@@ -105,8 +105,15 @@ Group by CustomerID
 [Adeniyi Olufunso Comprehensive Customer Data.xlsx](https://github.com/user-attachments/files/17690059/Adeniyi.Olufunso.Comprehensive.Customer.Data.xlsx)
 
 
+![SQL Customer data result 1](https://github.com/user-attachments/assets/6fc7ca6f-240c-47ea-8629-9142c7e8930c)
 
 
+![SQL Customer data result 2](https://github.com/user-attachments/assets/ef5f3561-7a5b-468d-8655-e18ef2d50475)
 
+
+![SQL customer data result 3](https://github.com/user-attachments/assets/4af15ea3-5a60-4eb4-86c0-e4951a5da9e0)
+
+
+![SQL Top 3 Regions --- Customer data](https://github.com/user-attachments/assets/48e714e6-752e-4796-8a2c-94fc440ec167)
 
 
