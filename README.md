@@ -8,8 +8,10 @@ Customer data, the primary dataset for this analysis was provided by LITA, and i
 
 ### Tools Used
 - Excel – Data cleaning, analysis and visualization [Download here](https://microsoft.com)
-- SQL Server – Data Analysis [Download here](https://......
-- PowerBI – Creating reports [Download here](https://......
+- SQL Server – Data Analysis [Download here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- PowerBI – Creating reports [Download here](https://www.microsoft./power-bi/downloads)
+-	GitHub - Portfolio building [Log in here](https://github.com/)
+
 
 
 
