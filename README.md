@@ -34,7 +34,71 @@ Queries were also written and executed to extract key insights on the following:
 -	find the total number of active and canceled subscriptions.
 
 ### Data Analysis
+```SQL
+select * from [dbo].[NCustomerdata] 
 
+Delete from [dbo].[NCustomerdata] where CustomerID is Null and Region is Null and SubscriptionType is Null 
+
+------------TOTAL NUMBER OF CUSTOMERS FROM EACH REGION------------
+
+Select Region, COUNT (DISTINCT CUSTOMERID) As CustomersByRegion
+from [dbo].[NCustomerdata] Group by Region
+
+-------------- Most Popular Subscription Type by the Number of Customers-------------
+
+Select Top (1) SubscriptionType, Count (CustomerID) As CustomerSubscriptionType
+from [dbo].[NCustomerdata] Group by SubscriptionType
+Order by CustomerSubscriptionType DESC  
+
+---------------CUSTOMERS WHO CANCELED THEIR SUBSCRIPTION WITHIN 6 MONTHS---------
+
+Select * from [dbo].[NCustomerdata] 
+where DATEDIFF (month, SubscriptionStart, SubscriptionEnd) <=6
+And SubscriptionEnd IS NOT NULL
+And Canceled = 1;
+
+--------------AVERAGE SUBSCRIPTION DURATION FOR ALL CUSTOMERS------------------
+SELECT AVG(DATEDIFF(MONTH, SubscriptionStart,
+COALESCE(SubscriptionEnd, SubscriptionStart))) AS AVG_Duration
+from [dbo].[NCustomerdata] 
+
+----------CUSTOMERS WITH SUBSCRIPTION LONGER THAN 12 MONTHS---------------
+
+Select CustomerName,
+SubscriptionStart, SubscriptionEnd,
+DATEDIFF(MONTH, SubscriptionStart, COALESCE(SubscriptionEnd, SubscriptionStart))
+As Duration from [dbo].[NCustomerdata] 
+where DATEDIFF (MONTH, SubscriptionStart, COALESCE (SubscriptionEnd, SubscriptionStart))<=12
+Order by Duration DESC
+
+------------TOTAL REVENUE BY SUBSCRIPTION TYPE----------
+
+  Select * from [dbo].[NCustomerdata]
+
+Select Region,
+Sum (Revenue) As Total_Regional_Revenue
+from [dbo].[NCustomerdata]
+Group by Region
+Order by Total_Regional_Revenue ASC
+
+-----------TOP 3 Regions by Subscription Cancellations--------------
+
+Select Top 3 Region,
+Count (SubscriptionEnd) As TotalCancelation 
+from [dbo].[NCustomerdata]
+where SubscriptionEnd Is Not Null
+Group by Region Order by TotalCancelation DESC
+
+-----------Total Number of Active and Canceled Subscriptions-------------
+
+Select CustomerID, count(Canceled) from [dbo].[NCustomerdata] 
+where Canceled = 'True'
+Group by CustomerID
+
+Select CustomerID, count(Canceled) from [dbo].[NCustomerdata] 
+where Canceled = 'False'
+Group by CustomerID
+```
 
 
 
