@@ -116,13 +116,15 @@ Group by CustomerID
 
 ![SQL Top 3 Regions --- Customer data](https://github.com/user-attachments/assets/48e714e6-752e-4796-8a2c-94fc440ec167)
 
+#### Creating Reports with Power BI
+
+![Power BI Customer Segmentation](https://github.com/user-attachments/assets/952c1eb2-d822-43ed-a37a-1d3077de5d56)
 
 The results of the analysis are summarized below:
 #### Subscription Overview;
-- The Basic subscription which is the most popular subscription type (16,921) also generated the highest revenue (33,776,735.00) of all the 3 subscription types, while the standard subscription had the lowest revenue of 16,864,376.00.  
+- The Basic subscription which is the most popular subscription type (16,921) also generated the highest revenue (33,776,735.00 approximately 34 million) of all the 3 subscription types, while the standard subscription had the lowest revenue of 16,864,376.00 approximately 17 million.  
 - The East region had the highest number of customers (8488), while the West region had the lowest value of 8420.      
-- No customers cancelled their subscriptions within 6 months.
-
+- 15,175 customers canceled their subscription after 6 months, while the total number of customers with active subscription closed at 18,612.
 ### Recommendations
 - The very high revenue generated from Basic Subscription type shows that most customers prefer it as it is also the most popular; hence, more resources should be invested into it so as to optimize profit. 
 - The reason for a low number of customers in the West region should be investigated, so as to identify and address the obstacles that may be present there. 
